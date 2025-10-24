@@ -2,8 +2,118 @@
 
 import { motion } from "framer-motion";
 import { fadeInUp, cardVariants } from "../utils/animations";
+import { useState } from "react";
 
 export default function PedagogyAndCurriculum() {
+  const [currentPillarSlide, setCurrentPillarSlide] = useState(0);
+  const [currentAgeSlide, setCurrentAgeSlide] = useState(0);
+
+  const pillars = [
+    {
+      icon: "🛡️",
+      title: "Guard",
+      desc: "Defensive and attacking positions from bottom",
+      image: "/guard.jpg",
+    },
+    {
+      icon: "🚀",
+      title: "Passing",
+      desc: "Techniques to overcome opponent's guard",
+      image: "/passing.jpg",
+    },
+    {
+      icon: "⚓",
+      title: "Control",
+      desc: "Dominant positions and weight distribution",
+      image: "/control.jpg",
+    },
+    {
+      icon: "🔒",
+      title: "Submissions",
+      desc: "Joint locks and chokes (age-appropriate)",
+      image: "/submission.jpg",
+    },
+    {
+      icon: "🤸",
+      title: "Takedowns",
+      desc: "Standing techniques and wrestling integration",
+      image: "/takedown.jpg",
+    },
+    {
+      icon: "🏃",
+      title: "Escapes",
+      desc: "Defensive movements and position recovery",
+      image: "/escape.jpg",
+    },
+  ];
+
+  const ageGroups = [
+    {
+      title: "Ages 4-7",
+      subtitle: "Little Champions",
+      description: "Learning through play and games",
+      image: "/four-seven.jpg",
+      focus: "Play-Based Learning",
+      focusIcon: "🎮",
+      focusDesc: "All techniques taught through fun games and activities",
+      focusColor: "emerald",
+      items: [
+        "Interactive games and movement exploration",
+        "Basic positions discovered through play",
+        "Coordination and motor skill development",
+        "Social skills and following instructions",
+      ],
+    },
+    {
+      title: "Ages 8-12",
+      subtitle: "Core Program",
+      description: "Structured curriculum with systematic progression",
+      image: "/eight-twelve.jpg",
+      focus: "Structured Learning",
+      focusIcon: "📋",
+      focusDesc: "Systematic curriculum with clear progression path",
+      focusColor: "blue",
+      items: [
+        "Comprehensive technique curriculum",
+        "Live drilling and controlled sparring",
+        "Competition preparation (optional)",
+        "Problem-solving and strategy development",
+      ],
+    },
+    {
+      title: "Ages 13-18",
+      subtitle: "Advanced Athletes",
+      description: "Advanced structured training",
+      image: "/thirteen-above.jpg",
+      focus: "Advanced Curriculum",
+      focusIcon: "🎯",
+      focusDesc: "Intensive structured program for competitive edge",
+      focusColor: "purple",
+      items: [
+        "Advanced techniques and concepts",
+        "Competition training and strategy",
+        "Strength and conditioning integration",
+        "Leadership development opportunities",
+      ],
+    },
+  ];
+
+  const nextPillarSlide = () => {
+    setCurrentPillarSlide((prev) => (prev + 1) % pillars.length);
+  };
+
+  const prevPillarSlide = () => {
+    setCurrentPillarSlide((prev) => (prev - 1 + pillars.length) % pillars.length);
+  };
+
+  const nextAgeSlide = () => {
+    setCurrentAgeSlide((prev) => (prev + 1) % ageGroups.length);
+  };
+
+  const prevAgeSlide = () => {
+    setCurrentAgeSlide((prev) => (prev - 1 + ageGroups.length) % ageGroups.length);
+  };
+
   return (
     <section className="py-24 bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 relative overflow-hidden">
       {/* Decorative Background */}
@@ -41,174 +151,139 @@ export default function PedagogyAndCurriculum() {
           <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
             Age-Specific Programs
           </h3>
-          <div className="grid gap-8 md:grid-cols-3">
-            <motion.div
-              className="relative bg-white rounded-2xl shadow-lg border border-emerald-100 hover:shadow-xl transition-all overflow-hidden"
-              custom={0}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-50px" }}
-              variants={cardVariants}
-              whileHover={{ y: -5 }}
-            >
-              {/* Image Section */}
-              <div className="relative h-48 overflow-hidden">
-                <img
-                  src="/four-seven.jpg"
-                  alt="Ages 4-7 BJJ training"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                <div className="absolute bottom-4 left-6 text-white">
-                  <h3 className="text-2xl font-bold">Ages 4-7</h3>
-                  <p className="text-sm text-gray-100">
-                    <strong>Little Champions</strong> — Learning through play and
-                    games
-                  </p>
-                </div>
-              </div>
-              {/* Content Section */}
-              <div className="p-6">
-                <div className="bg-emerald-50 p-3 rounded-lg mb-3">
-                  <p className="text-xs font-semibold text-emerald-700 mb-1">
-                    🎮 Focus: Play-Based Learning
-                  </p>
-                  <p className="text-xs text-gray-600">
-                    All techniques taught through fun games and activities
-                  </p>
-                </div>
-                <ul className="text-sm text-gray-700 space-y-2">
-                  <li className="flex items-start">
-                    <span className="text-emerald-500 mr-2">✓</span>
-                    <span>Interactive games and movement exploration</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-emerald-500 mr-2">✓</span>
-                    <span>Basic positions discovered through play</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-emerald-500 mr-2">✓</span>
-                    <span>Coordination and motor skill development</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-emerald-500 mr-2">✓</span>
-                    <span>Social skills and following instructions</span>
-                  </li>
-                </ul>
-              </div>
-            </motion.div>
 
-            <motion.div
-              className="relative bg-white rounded-2xl shadow-lg border border-emerald-100 hover:shadow-xl transition-all overflow-hidden"
-              custom={1}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-50px" }}
-              variants={cardVariants}
-              whileHover={{ y: -5 }}
-            >
-              {/* Image Section */}
-              <div className="relative h-48 overflow-hidden">
-                <img
-                  src="/eight-twelve.jpg"
-                  alt="Ages 8-12 BJJ training"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                <div className="absolute bottom-4 left-6 text-white">
-                  <h3 className="text-2xl font-bold">Ages 8-12</h3>
-                  <p className="text-sm text-gray-100">
-                    <strong>Core Program</strong> — Structured curriculum with
-                    systematic progression
-                  </p>
+          {/* Desktop Grid View */}
+          <div className="hidden md:grid gap-8 md:grid-cols-3">
+            {ageGroups.map((group, index) => (
+              <motion.div
+                key={group.title}
+                className="relative bg-white rounded-2xl shadow-lg border border-emerald-100 hover:shadow-xl transition-all overflow-hidden"
+                custom={index}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-50px" }}
+                variants={cardVariants}
+                whileHover={{ y: -5 }}
+              >
+                {/* Image Section */}
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src={group.image}
+                    alt={`${group.title} BJJ training`}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <div className="absolute bottom-4 left-6 text-white">
+                    <h3 className="text-2xl font-bold">{group.title}</h3>
+                    <p className="text-sm text-gray-100">
+                      <strong>{group.subtitle}</strong> — {group.description}
+                    </p>
+                  </div>
                 </div>
-              </div>
-              {/* Content Section */}
-              <div className="p-6">
-                <div className="bg-blue-50 p-3 rounded-lg mb-3">
-                  <p className="text-xs font-semibold text-blue-700 mb-1">
-                    📋 Focus: Structured Learning
-                  </p>
-                  <p className="text-xs text-gray-600">
-                    Systematic curriculum with clear progression path
-                  </p>
+                {/* Content Section */}
+                <div className="p-6">
+                  <div className={`bg-${group.focusColor}-50 p-3 rounded-lg mb-3`}>
+                    <p className={`text-xs font-semibold text-${group.focusColor}-700 mb-1`}>
+                      {group.focusIcon} Focus: {group.focus}
+                    </p>
+                    <p className="text-xs text-gray-600">{group.focusDesc}</p>
+                  </div>
+                  <ul className="text-sm text-gray-700 space-y-2">
+                    {group.items.map((item, idx) => (
+                      <li key={idx} className="flex items-start">
+                        <span className="text-emerald-500 mr-2">✓</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <ul className="text-sm text-gray-700 space-y-2">
-                  <li className="flex items-start">
-                    <span className="text-emerald-500 mr-2">✓</span>
-                    <span>Comprehensive technique curriculum</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-emerald-500 mr-2">✓</span>
-                    <span>Live drilling and controlled sparring</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-emerald-500 mr-2">✓</span>
-                    <span>Competition preparation (optional)</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-emerald-500 mr-2">✓</span>
-                    <span>Problem-solving and strategy development</span>
-                  </li>
-                </ul>
-              </div>
-            </motion.div>
+              </motion.div>
+            ))}
+          </div>
 
-            <motion.div
-              className="relative bg-white rounded-2xl shadow-lg border border-emerald-100 hover:shadow-xl transition-all overflow-hidden"
-              custom={2}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-50px" }}
-              variants={cardVariants}
-              whileHover={{ y: -5 }}
+          {/* Mobile Carousel View */}
+          <div className="md:hidden relative">
+            <div className="overflow-hidden">
+              <div
+                className="flex transition-transform duration-500 ease-out"
+                style={{ transform: `translateX(-${currentAgeSlide * 100}%)` }}
+              >
+                {ageGroups.map((group, index) => (
+                  <div key={group.title} className="w-full flex-shrink-0 px-4">
+                    <div className="bg-white rounded-2xl shadow-lg border border-emerald-100 overflow-hidden">
+                      {/* Image Section */}
+                      <div className="relative h-56 overflow-hidden">
+                        <img
+                          src={group.image}
+                          alt={`${group.title} BJJ training`}
+                          className="w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                        <div className="absolute bottom-4 left-6 text-white">
+                          <h3 className="text-2xl font-bold">{group.title}</h3>
+                          <p className="text-sm text-gray-100">
+                            <strong>{group.subtitle}</strong> — {group.description}
+                          </p>
+                        </div>
+                      </div>
+                      {/* Content Section */}
+                      <div className="p-6">
+                        <div className={`bg-${group.focusColor}-50 p-3 rounded-lg mb-3`}>
+                          <p className={`text-xs font-semibold text-${group.focusColor}-700 mb-1`}>
+                            {group.focusIcon} Focus: {group.focus}
+                          </p>
+                          <p className="text-xs text-gray-600">{group.focusDesc}</p>
+                        </div>
+                        <ul className="text-sm text-gray-700 space-y-2">
+                          {group.items.map((item, idx) => (
+                            <li key={idx} className="flex items-start">
+                              <span className="text-emerald-500 mr-2">✓</span>
+                              <span>{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Navigation Buttons */}
+            <button
+              onClick={prevAgeSlide}
+              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 bg-white/90 hover:bg-white text-emerald-600 rounded-full p-3 shadow-lg transition-all z-10"
+              aria-label="Previous age group"
             >
-              {/* Image Section */}
-              <div className="relative h-48 overflow-hidden">
-                <img
-                  src="/thirteen-above.jpg"
-                  alt="Ages 13-18 BJJ training"
-                  className="w-full h-full object-cover"
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <button
+              onClick={nextAgeSlide}
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 bg-white/90 hover:bg-white text-emerald-600 rounded-full p-3 shadow-lg transition-all z-10"
+              aria-label="Next age group"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+
+            {/* Dots Indicator */}
+            <div className="flex justify-center gap-2 mt-6">
+              {ageGroups.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentAgeSlide(index)}
+                  className={`w-2.5 h-2.5 rounded-full transition-all ${
+                    index === currentAgeSlide
+                      ? "bg-emerald-600 w-8"
+                      : "bg-emerald-300 hover:bg-emerald-400"
+                  }`}
+                  aria-label={`Go to age group ${index + 1}`}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                <div className="absolute bottom-4 left-6 text-white">
-                  <h3 className="text-2xl font-bold">Ages 13-18</h3>
-                  <p className="text-sm text-gray-100">
-                    <strong>Advanced Athletes</strong> — Advanced structured
-                    training
-                  </p>
-                </div>
-              </div>
-              {/* Content Section */}
-              <div className="p-6">
-                <div className="bg-purple-50 p-3 rounded-lg mb-3">
-                  <p className="text-xs font-semibold text-purple-700 mb-1">
-                    🎯 Focus: Advanced Curriculum
-                  </p>
-                  <p className="text-xs text-gray-600">
-                    Intensive structured program for competitive edge
-                  </p>
-                </div>
-                <ul className="text-sm text-gray-700 space-y-2">
-                  <li className="flex items-start">
-                    <span className="text-emerald-500 mr-2">✓</span>
-                    <span>Advanced techniques and concepts</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-emerald-500 mr-2">✓</span>
-                    <span>Competition training and strategy</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-emerald-500 mr-2">✓</span>
-                    <span>Strength and conditioning integration</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-emerald-500 mr-2">✓</span>
-                    <span>Leadership development opportunities</span>
-                  </li>
-                </ul>
-              </div>
-            </motion.div>
+              ))}
+            </div>
           </div>
         </div>
 
@@ -223,53 +298,113 @@ export default function PedagogyAndCurriculum() {
           <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
             Six Pillars of Our Curriculum
           </h3>
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {[
-              {
-                icon: "🛡️",
-                title: "Guard",
-                desc: "Defensive and attacking positions from bottom",
-              },
-              {
-                icon: "🚀",
-                title: "Passing",
-                desc: "Techniques to overcome opponent's guard",
-              },
-              {
-                icon: "⚓",
-                title: "Control",
-                desc: "Dominant positions and weight distribution",
-              },
-              {
-                icon: "🔒",
-                title: "Submissions",
-                desc: "Joint locks and chokes (age-appropriate)",
-              },
-              {
-                icon: "🤸",
-                title: "Takedowns",
-                desc: "Standing techniques and wrestling integration",
-              },
-              {
-                icon: "🏃",
-                title: "Escapes",
-                desc: "Defensive movements and position recovery",
-              },
-            ].map((pillar, index) => (
+
+          {/* Desktop Grid View */}
+          <div className="hidden md:grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {pillars.map((pillar, index) => (
               <motion.div
                 key={pillar.title}
-                className="bg-white/80 backdrop-blur-sm p-6 rounded-xl border border-emerald-100"
+                className="bg-white rounded-2xl shadow-lg border border-emerald-100 overflow-hidden hover:shadow-xl transition-all"
                 custom={index}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={cardVariants}
+                whileHover={{ y: -5 }}
               >
-                <div className="text-3xl mb-2">{pillar.icon}</div>
-                <h4 className="font-bold text-gray-900 mb-1">{pillar.title}</h4>
-                <p className="text-sm text-gray-600">{pillar.desc}</p>
+                {/* Image Section */}
+                <div className="relative h-56 overflow-hidden">
+                  <img
+                    src={pillar.image}
+                    alt={`${pillar.title} technique demonstration`}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                  <div className="absolute bottom-4 left-6">
+                    <div className="flex items-center mb-2">
+                      <span className="text-3xl mr-2">{pillar.icon}</span>
+                      <h4 className="font-bold text-white text-2xl">{pillar.title}</h4>
+                    </div>
+                  </div>
+                </div>
+                {/* Content Section */}
+                <div className="p-6">
+                  <p className="text-sm text-gray-700 leading-relaxed">{pillar.desc}</p>
+                </div>
               </motion.div>
             ))}
+          </div>
+
+          {/* Mobile Carousel View */}
+          <div className="md:hidden relative">
+            <div className="overflow-hidden">
+              <div
+                className="flex transition-transform duration-500 ease-out"
+                style={{ transform: `translateX(-${currentPillarSlide * 100}%)` }}
+              >
+                {pillars.map((pillar, index) => (
+                  <div key={pillar.title} className="w-full flex-shrink-0 px-4">
+                    <div className="bg-white rounded-2xl shadow-lg border border-emerald-100 overflow-hidden">
+                      {/* Image Section */}
+                      <div className="relative h-64 overflow-hidden">
+                        <img
+                          src={pillar.image}
+                          alt={`${pillar.title} technique demonstration`}
+                          className="w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                        <div className="absolute bottom-4 left-6">
+                          <div className="flex items-center mb-2">
+                            <span className="text-3xl mr-2">{pillar.icon}</span>
+                            <h4 className="font-bold text-white text-2xl">{pillar.title}</h4>
+                          </div>
+                        </div>
+                      </div>
+                      {/* Content Section */}
+                      <div className="p-6">
+                        <p className="text-base text-gray-700 leading-relaxed">{pillar.desc}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Navigation Buttons */}
+            <button
+              onClick={prevPillarSlide}
+              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 bg-white/90 hover:bg-white text-emerald-600 rounded-full p-3 shadow-lg transition-all z-10"
+              aria-label="Previous pillar"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <button
+              onClick={nextPillarSlide}
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 bg-white/90 hover:bg-white text-emerald-600 rounded-full p-3 shadow-lg transition-all z-10"
+              aria-label="Next pillar"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+
+            {/* Dots Indicator */}
+            <div className="flex justify-center gap-2 mt-6">
+              {pillars.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentPillarSlide(index)}
+                  className={`w-2.5 h-2.5 rounded-full transition-all ${
+                    index === currentPillarSlide
+                      ? "bg-emerald-600 w-8"
+                      : "bg-emerald-300 hover:bg-emerald-400"
+                  }`}
+                  aria-label={`Go to pillar ${index + 1}`}
+                />
+              ))}
+            </div>
           </div>
         </motion.div>
 
