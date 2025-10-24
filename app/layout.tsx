@@ -16,6 +16,26 @@ export const metadata: Metadata = {
   title: "BJJ for Kids at Next School | Brazilian Jiu-Jitsu Program",
   description:
     "Empower your child with confidence, discipline, and fitness through Brazilian Jiu-Jitsu. Safe, fun, and educational martial arts program for ages 4-18 at Next School.",
+  openGraph: {
+    title: "BJJ for Kids at Next School | Brazilian Jiu-Jitsu Program",
+    description:
+      "Empower your child with confidence, discipline, and fitness through Brazilian Jiu-Jitsu. Safe, fun, and educational martial arts program for ages 4-18 at Next School.",
+    type: "website",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "BJJ for Kids at Next School",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "BJJ for Kids at Next School | Brazilian Jiu-Jitsu Program",
+    description:
+      "Empower your child with confidence, discipline, and fitness through Brazilian Jiu-Jitsu. Safe, fun, and educational martial arts program for ages 4-18 at Next School.",
+  },
 };
 
 export default function RootLayout({
