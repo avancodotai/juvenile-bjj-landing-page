@@ -4,7 +4,10 @@ import { motion } from "framer-motion";
 
 export default function CTA() {
   return (
-    <section id="enroll" className="py-24 bg-gradient-to-br from-blue-500 via-indigo-600 to-purple-700 overflow-hidden relative">
+    <section
+      id="enroll"
+      className="py-24 bg-gradient-to-br from-blue-500 via-indigo-600 to-purple-700 overflow-hidden relative"
+    >
       {/* Decorative Background */}
       <div className="absolute top-10 left-10 w-96 h-96 bg-yellow-400/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-10 right-10 w-96 h-96 bg-pink-400/10 rounded-full blur-3xl"></div>
@@ -33,7 +36,9 @@ export default function CTA() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            Join our BJJ program at Next School! Sign up for a demo class and see firsthand how it can benefit your child. It's never too late to start!
+            Join our BJJ program at Next School! Sign up for a demo class and
+            see firsthand how it can benefit your child. It's never too late to
+            start!
           </motion.p>
           <motion.p
             className="text-sm text-blue-200 mt-3"
@@ -56,7 +61,10 @@ export default function CTA() {
               data-tally-emoji-text="👋"
               data-tally-emoji-animation="wave"
               className="inline-block rounded-full bg-yellow-400 px-10 py-5 text-xl font-semibold text-blue-900 shadow-xl hover:bg-yellow-300 transition-all cursor-pointer"
-              whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(0,0,0,0.3)" }}
+              whileHover={{
+                scale: 1.05,
+                boxShadow: "0 20px 40px rgba(0,0,0,0.3)",
+              }}
               whileTap={{ scale: 0.95 }}
             >
               Enroll Now

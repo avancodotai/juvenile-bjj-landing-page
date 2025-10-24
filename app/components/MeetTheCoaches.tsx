@@ -8,7 +8,7 @@ const fadeInUp: Variants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6,  },
+    transition: { duration: 0.6 },
   },
 };
 
@@ -271,7 +271,9 @@ export default function MeetTheCoaches() {
           >
             <p className="text-gray-700">
               <strong className="text-blue-700">Additional Support:</strong> Our
-              program also features guest Judo instructors, visiting wrestling coaches, and consulting black belts to provide comprehensive martial arts education.
+              program also features guest Judo instructors, visiting wrestling
+              coaches, and consulting black belts to provide comprehensive
+              martial arts education.
             </p>
           </motion.div>
         </div>

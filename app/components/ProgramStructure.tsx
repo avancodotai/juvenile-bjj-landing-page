@@ -7,7 +7,7 @@ const fadeInUp: Variants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6,  },
+    transition: { duration: 0.6 },
   },
 };
 
@@ -59,7 +59,8 @@ export default function ProgramStructure() {
               <div className="text-4xl mb-4">👶</div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Ages 4-7</h3>
               <p className="text-gray-600">
-                Fun games and basic movements to introduce BJJ concepts while developing motor skills.
+                Fun games and basic movements to introduce BJJ concepts while
+                developing motor skills.
               </p>
             </motion.div>
             <motion.div
@@ -72,9 +73,12 @@ export default function ProgramStructure() {
               whileHover={{ y: -5, transition: { duration: 0.2 } }}
             >
               <div className="text-4xl mb-4">🧒</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Ages 8-12</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Ages 8-12
+              </h3>
               <p className="text-gray-600">
-                Structured drills with technique focus, building a strong foundation in BJJ fundamentals.
+                Structured drills with technique focus, building a strong
+                foundation in BJJ fundamentals.
               </p>
             </motion.div>
             <motion.div
@@ -87,9 +91,12 @@ export default function ProgramStructure() {
               whileHover={{ y: -5, transition: { duration: 0.2 } }}
             >
               <div className="text-4xl mb-4">👦</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Ages 13-18</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Ages 13-18
+              </h3>
               <p className="text-gray-600">
-                Advanced techniques and competition preparation for serious young athletes.
+                Advanced techniques and competition preparation for serious
+                young athletes.
               </p>
             </motion.div>
           </div>
@@ -101,7 +108,9 @@ export default function ProgramStructure() {
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Class Details</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              Class Details
+            </h3>
             <div className="grid gap-6 sm:grid-cols-2">
               <div>
                 <dt className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2">
@@ -109,8 +118,12 @@ export default function ProgramStructure() {
                 </dt>
                 <dd className="text-lg text-gray-900">
                   Two classes per week (1 hour each)
-                  <p className="text-base text-gray-600 mt-1">Tuesdays & Thursdays after school</p>
-                  <p className="text-base text-gray-600 mt-1">Optional Saturday open mat</p>
+                  <p className="text-base text-gray-600 mt-1">
+                    Tuesdays & Thursdays after school
+                  </p>
+                  <p className="text-base text-gray-600 mt-1">
+                    Optional Saturday open mat
+                  </p>
                 </dd>
               </div>
               <div>
@@ -119,8 +132,12 @@ export default function ProgramStructure() {
                 </dt>
                 <dd className="text-lg text-gray-900">
                   Comprehensive training covering:
-                  <p className="text-base text-gray-600 mt-1">Guard • Passing • Control</p>
-                  <p className="text-base text-gray-600 mt-1">Submissions • Takedowns • Escapes</p>
+                  <p className="text-base text-gray-600 mt-1">
+                    Guard • Passing • Control
+                  </p>
+                  <p className="text-base text-gray-600 mt-1">
+                    Submissions • Takedowns • Escapes
+                  </p>
                 </dd>
               </div>
             </div>

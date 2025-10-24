@@ -16,7 +16,10 @@ const cardVariants: Variants = {
 
 export default function WhatIsBJJ() {
   return (
-    <section id="learn-more" className="py-20 bg-gradient-to-br from-purple-50 via-pink-50 to-rose-50 relative overflow-hidden">
+    <section
+      id="learn-more"
+      className="py-20 bg-gradient-to-br from-purple-50 via-pink-50 to-rose-50 relative overflow-hidden"
+    >
       {/* Decorative Background */}
       <div className="absolute top-10 right-10 w-96 h-96 bg-purple-200/20 rounded-full blur-3xl"></div>
       <div className="absolute bottom-10 left-10 w-96 h-96 bg-pink-200/20 rounded-full blur-3xl"></div>
@@ -36,7 +39,9 @@ export default function WhatIsBJJ() {
             What is Brazilian Jiu-Jitsu?
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Think of it as physical chess — a strategic, problem-solving sport where your child learns to think ahead, stay calm under pressure, and have a blast on the mat.
+            Think of it as physical chess — a strategic, problem-solving sport
+            where your child learns to think ahead, stay calm under pressure,
+            and have a blast on the mat.
           </p>
         </motion.div>
 
@@ -59,7 +64,8 @@ export default function WhatIsBJJ() {
                   Safe Grappling Sport
                 </h3>
                 <p className="mt-2 text-base text-gray-600">
-                  No punching, no kicking. BJJ is a grappling martial art that uses leverage and technique over strength.
+                  No punching, no kicking. BJJ is a grappling martial art that
+                  uses leverage and technique over strength.
                 </p>
               </div>
             </motion.div>
@@ -81,7 +87,8 @@ export default function WhatIsBJJ() {
                   Physical Chess
                 </h3>
                 <p className="mt-2 text-base text-gray-600">
-                  Kids solve problems and strategize on the mat — developing critical thinking while having fun.
+                  Kids solve problems and strategize on the mat — developing
+                  critical thinking while having fun.
                 </p>
               </div>
             </motion.div>
@@ -103,7 +110,8 @@ export default function WhatIsBJJ() {
                   Global Sport
                 </h3>
                 <p className="mt-2 text-base text-gray-600">
-                  With competitions worldwide across all ages and weight classes, BJJ is rapidly growing in India.
+                  With competitions worldwide across all ages and weight
+                  classes, BJJ is rapidly growing in India.
                 </p>
               </div>
             </motion.div>

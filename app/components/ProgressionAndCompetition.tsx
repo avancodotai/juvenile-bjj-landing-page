@@ -7,7 +7,7 @@ const fadeInUp: Variants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6,  },
+    transition: { duration: 0.6 },
   },
 };
 
@@ -50,15 +50,24 @@ export default function ProgressionAndCompetition() {
             whileInView="visible"
             viewport={{ once: true, margin: "-50px" }}
             variants={scaleIn}
-            whileHover={{ y: -5, boxShadow: "0 10px 30px rgba(0,0,0,0.1)", transition: { duration: 0.2 } }}
+            whileHover={{
+              y: -5,
+              boxShadow: "0 10px 30px rgba(0,0,0,0.1)",
+              transition: { duration: 0.2 },
+            }}
           >
             <div className="text-5xl mb-4">🥋</div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Belt Progression</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              Belt Progression
+            </h3>
             <p className="text-gray-700 mb-4">
-              Kids are evaluated based on consistency, respect for teammates, and skill development. Grading conducted by a Black Belt near term end.
+              Kids are evaluated based on consistency, respect for teammates,
+              and skill development. Grading conducted by a Black Belt near term
+              end.
             </p>
             <p className="text-sm text-gray-600 italic">
-              Juveniles (under 16) have a specialized belt ranking system designed for their development journey.
+              Juveniles (under 16) have a specialized belt ranking system
+              designed for their development journey.
             </p>
           </motion.div>
 
@@ -69,15 +78,24 @@ export default function ProgressionAndCompetition() {
             whileInView="visible"
             viewport={{ once: true, margin: "-50px" }}
             variants={scaleIn}
-            whileHover={{ y: -5, boxShadow: "0 10px 30px rgba(0,0,0,0.1)", transition: { duration: 0.2 } }}
+            whileHover={{
+              y: -5,
+              boxShadow: "0 10px 30px rgba(0,0,0,0.1)",
+              transition: { duration: 0.2 },
+            }}
           >
             <div className="text-5xl mb-4">🏆</div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Competitions</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              Competitions
+            </h3>
             <p className="text-gray-700 mb-4">
-              One competition per term allows students to showcase their skills in a safe, supportive environment. Build confidence through friendly competition!
+              One competition per term allows students to showcase their skills
+              in a safe, supportive environment. Build confidence through
+              friendly competition!
             </p>
             <p className="text-sm text-gray-600 italic">
-              Optional participation — perfect for kids ready to test themselves.
+              Optional participation — perfect for kids ready to test
+              themselves.
             </p>
           </motion.div>
         </div>

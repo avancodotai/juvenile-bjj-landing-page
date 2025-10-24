@@ -7,7 +7,7 @@ const fadeInUp: Variants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6,  },
+    transition: { duration: 0.6 },
   },
 };
 
@@ -45,7 +45,8 @@ export default function PedagogyAndCurriculum() {
             Our Curriculum & Training System
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-700">
-            Age-appropriate training that combines technical excellence with character development
+            Age-appropriate training that combines technical excellence with
+            character development
           </p>
           <div className="mt-6 inline-flex items-center gap-2 bg-yellow-100 border border-yellow-300 px-6 py-3 rounded-full">
             <span className="text-2xl">✨</span>
@@ -57,7 +58,9 @@ export default function PedagogyAndCurriculum() {
 
         {/* Age Groups */}
         <div className="mx-auto max-w-6xl mb-16">
-          <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Age-Specific Programs</h3>
+          <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+            Age-Specific Programs
+          </h3>
           <div className="grid gap-8 md:grid-cols-3">
             <motion.div
               className="bg-white p-8 rounded-2xl shadow-lg border border-emerald-100 hover:shadow-xl transition-all"
@@ -71,11 +74,16 @@ export default function PedagogyAndCurriculum() {
               <div className="text-4xl mb-4">👶</div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Ages 4-7</h3>
               <p className="text-sm text-gray-600 mb-4">
-                <strong>Little Champions</strong> — Learning through play and games
+                <strong>Little Champions</strong> — Learning through play and
+                games
               </p>
               <div className="bg-emerald-50 p-3 rounded-lg mb-3">
-                <p className="text-xs font-semibold text-emerald-700 mb-1">🎮 Focus: Play-Based Learning</p>
-                <p className="text-xs text-gray-600">All techniques taught through fun games and activities</p>
+                <p className="text-xs font-semibold text-emerald-700 mb-1">
+                  🎮 Focus: Play-Based Learning
+                </p>
+                <p className="text-xs text-gray-600">
+                  All techniques taught through fun games and activities
+                </p>
               </div>
               <ul className="text-sm text-gray-700 space-y-2">
                 <li className="flex items-start">
@@ -107,13 +115,20 @@ export default function PedagogyAndCurriculum() {
               whileHover={{ y: -5 }}
             >
               <div className="text-4xl mb-4">🧒</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Ages 8-12</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Ages 8-12
+              </h3>
               <p className="text-sm text-gray-600 mb-4">
-                <strong>Core Program</strong> — Structured curriculum with systematic progression
+                <strong>Core Program</strong> — Structured curriculum with
+                systematic progression
               </p>
               <div className="bg-blue-50 p-3 rounded-lg mb-3">
-                <p className="text-xs font-semibold text-blue-700 mb-1">📋 Focus: Structured Learning</p>
-                <p className="text-xs text-gray-600">Systematic curriculum with clear progression path</p>
+                <p className="text-xs font-semibold text-blue-700 mb-1">
+                  📋 Focus: Structured Learning
+                </p>
+                <p className="text-xs text-gray-600">
+                  Systematic curriculum with clear progression path
+                </p>
               </div>
               <ul className="text-sm text-gray-700 space-y-2">
                 <li className="flex items-start">
@@ -145,13 +160,20 @@ export default function PedagogyAndCurriculum() {
               whileHover={{ y: -5 }}
             >
               <div className="text-4xl mb-4">👦</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Ages 13-18</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Ages 13-18
+              </h3>
               <p className="text-sm text-gray-600 mb-4">
-                <strong>Advanced Athletes</strong> — Advanced structured training
+                <strong>Advanced Athletes</strong> — Advanced structured
+                training
               </p>
               <div className="bg-purple-50 p-3 rounded-lg mb-3">
-                <p className="text-xs font-semibold text-purple-700 mb-1">🎯 Focus: Advanced Curriculum</p>
-                <p className="text-xs text-gray-600">Intensive structured program for competitive edge</p>
+                <p className="text-xs font-semibold text-purple-700 mb-1">
+                  🎯 Focus: Advanced Curriculum
+                </p>
+                <p className="text-xs text-gray-600">
+                  Intensive structured program for competitive edge
+                </p>
               </div>
               <ul className="text-sm text-gray-700 space-y-2">
                 <li className="flex items-start">
@@ -188,12 +210,36 @@ export default function PedagogyAndCurriculum() {
           </h3>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {[
-              { icon: "🛡️", title: "Guard", desc: "Defensive and attacking positions from bottom" },
-              { icon: "🚀", title: "Passing", desc: "Techniques to overcome opponent's guard" },
-              { icon: "⚓", title: "Control", desc: "Dominant positions and weight distribution" },
-              { icon: "🔒", title: "Submissions", desc: "Joint locks and chokes (age-appropriate)" },
-              { icon: "🤸", title: "Takedowns", desc: "Standing techniques and wrestling integration" },
-              { icon: "🏃", title: "Escapes", desc: "Defensive movements and position recovery" },
+              {
+                icon: "🛡️",
+                title: "Guard",
+                desc: "Defensive and attacking positions from bottom",
+              },
+              {
+                icon: "🚀",
+                title: "Passing",
+                desc: "Techniques to overcome opponent's guard",
+              },
+              {
+                icon: "⚓",
+                title: "Control",
+                desc: "Dominant positions and weight distribution",
+              },
+              {
+                icon: "🔒",
+                title: "Submissions",
+                desc: "Joint locks and chokes (age-appropriate)",
+              },
+              {
+                icon: "🤸",
+                title: "Takedowns",
+                desc: "Standing techniques and wrestling integration",
+              },
+              {
+                icon: "🏃",
+                title: "Escapes",
+                desc: "Defensive movements and position recovery",
+              },
             ].map((pillar, index) => (
               <motion.div
                 key={pillar.title}
@@ -220,7 +266,9 @@ export default function PedagogyAndCurriculum() {
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Class Details</h3>
+          <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+            Class Details
+          </h3>
           <div className="grid gap-8 md:grid-cols-3">
             <div>
               <h4 className="text-sm font-semibold text-emerald-600 uppercase tracking-wider mb-3">
@@ -312,21 +360,37 @@ export default function PedagogyAndCurriculum() {
               </p>
               <ul className="space-y-3 text-sm text-gray-700">
                 <li className="flex items-start">
-                  <span className="text-emerald-600 font-semibold mr-2 mt-0.5">40%</span>
-                  <span><strong>Attendance & Consistency</strong> — Regular training and commitment to learning</span>
+                  <span className="text-emerald-600 font-semibold mr-2 mt-0.5">
+                    40%
+                  </span>
+                  <span>
+                    <strong>Attendance & Consistency</strong> — Regular training
+                    and commitment to learning
+                  </span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-emerald-600 font-semibold mr-2 mt-0.5">30%</span>
-                  <span><strong>Respect & Attitude</strong> — Behavior towards coaches, peers, and the mat</span>
+                  <span className="text-emerald-600 font-semibold mr-2 mt-0.5">
+                    30%
+                  </span>
+                  <span>
+                    <strong>Respect & Attitude</strong> — Behavior towards
+                    coaches, peers, and the mat
+                  </span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-emerald-600 font-semibold mr-2 mt-0.5">30%</span>
-                  <span><strong>Technical Skill</strong> — Understanding and execution of techniques</span>
+                  <span className="text-emerald-600 font-semibold mr-2 mt-0.5">
+                    30%
+                  </span>
+                  <span>
+                    <strong>Technical Skill</strong> — Understanding and
+                    execution of techniques
+                  </span>
                 </li>
               </ul>
               <div className="mt-4 p-3 bg-emerald-50 rounded-lg">
                 <p className="text-xs text-emerald-800">
-                  <strong>Note:</strong> Every student progresses at their own pace. We celebrate effort and growth over perfection.
+                  <strong>Note:</strong> Every student progresses at their own
+                  pace. We celebrate effort and growth over perfection.
                 </p>
               </div>
             </div>
@@ -350,15 +414,21 @@ export default function PedagogyAndCurriculum() {
                 </div>
                 <div className="flex items-center">
                   <div className="w-16 h-4 bg-gradient-to-r from-yellow-400 to-white border-2 border-gray-400 rounded mr-3"></div>
-                  <span className="text-gray-700">Yellow Belt (8-15 years)</span>
+                  <span className="text-gray-700">
+                    Yellow Belt (8-15 years)
+                  </span>
                 </div>
                 <div className="flex items-center">
                   <div className="w-16 h-4 bg-gradient-to-r from-orange-400 to-white border-2 border-gray-400 rounded mr-3"></div>
-                  <span className="text-gray-700">Orange Belt (8-15 years)</span>
+                  <span className="text-gray-700">
+                    Orange Belt (8-15 years)
+                  </span>
                 </div>
                 <div className="flex items-center">
                   <div className="w-16 h-4 bg-gradient-to-r from-green-500 to-white border-2 border-gray-400 rounded mr-3"></div>
-                  <span className="text-gray-700">Green Belt (13-15 years)</span>
+                  <span className="text-gray-700">
+                    Green Belt (13-15 years)
+                  </span>
                 </div>
               </div>
               <p className="text-xs text-gray-600 mt-4 italic">
@@ -369,7 +439,10 @@ export default function PedagogyAndCurriculum() {
 
           <div className="bg-white/80 p-6 rounded-xl text-center">
             <p className="text-sm text-gray-700">
-              <strong className="text-emerald-700">Grading Ceremony:</strong> Conducted by a certified Black Belt near term end at Next School campus. Students receive belts and stripes in recognition of their dedication and progress in front of their peers and families.
+              <strong className="text-emerald-700">Grading Ceremony:</strong>{" "}
+              Conducted by a certified Black Belt near term end at Next School
+              campus. Students receive belts and stripes in recognition of their
+              dedication and progress in front of their peers and families.
             </p>
           </div>
         </motion.div>

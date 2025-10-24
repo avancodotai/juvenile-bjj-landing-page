@@ -52,7 +52,8 @@ export default function Benefits() {
             What Will Your Child Gain?
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Beyond learning a martial art, our BJJ program at Next School creates well-rounded individuals ready to face life's challenges.
+            Beyond learning a martial art, our BJJ program at Next School
+            creates well-rounded individuals ready to face life's challenges.
           </p>
         </motion.div>
 
@@ -73,26 +74,65 @@ export default function Benefits() {
                 Build Unshakeable Confidence
               </h3>
               <p className="text-lg text-gray-600 mb-6">
-                Watch your child's self-esteem soar as they master new techniques, earn stripes and belts, and overcome challenges on the mat. Every small victory translates into big confidence gains in school and life.
+                Watch your child's self-esteem soar as they master new
+                techniques, earn stripes and belts, and overcome challenges on
+                the mat. Every small victory translates into big confidence
+                gains in school and life.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start">
-                  <svg className="h-6 w-6 text-green-500 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  <svg
+                    className="h-6 w-6 text-green-500 mr-3 mt-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
                   </svg>
-                  <span className="text-gray-700">Sense of accomplishment through progressive belt system</span>
+                  <span className="text-gray-700">
+                    Sense of accomplishment through progressive belt system
+                  </span>
                 </li>
                 <li className="flex items-start">
-                  <svg className="h-6 w-6 text-green-500 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  <svg
+                    className="h-6 w-6 text-green-500 mr-3 mt-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
                   </svg>
-                  <span className="text-gray-700">Learn to handle pressure in a safe environment</span>
+                  <span className="text-gray-700">
+                    Learn to handle pressure in a safe environment
+                  </span>
                 </li>
                 <li className="flex items-start">
-                  <svg className="h-6 w-6 text-green-500 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  <svg
+                    className="h-6 w-6 text-green-500 mr-3 mt-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
                   </svg>
-                  <span className="text-gray-700">Build resilience by learning from setbacks</span>
+                  <span className="text-gray-700">
+                    Build resilience by learning from setbacks
+                  </span>
                 </li>
               </ul>
             </motion.div>
@@ -109,7 +149,7 @@ export default function Benefits() {
                 transition={{ duration: 0.3 }}
               >
                 <Image
-                  src="/confidence.jpeg"
+                  src="/confidence.jpg"
                   alt="BJJ students demonstrating confidence"
                   fill
                   className="object-cover"
@@ -134,26 +174,64 @@ export default function Benefits() {
                 Develop Discipline & Respect
               </h3>
               <p className="text-lg text-gray-600 mb-6">
-                BJJ training instills values that extend far beyond the mat. Your child will learn the importance of following instructions, respecting others, and persevering through challenges.
+                BJJ training instills values that extend far beyond the mat.
+                Your child will learn the importance of following instructions,
+                respecting others, and persevering through challenges.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start">
-                  <svg className="h-6 w-6 text-green-500 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  <svg
+                    className="h-6 w-6 text-green-500 mr-3 mt-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
                   </svg>
-                  <span className="text-gray-700">Follow structured training and respect authority</span>
+                  <span className="text-gray-700">
+                    Follow structured training and respect authority
+                  </span>
                 </li>
                 <li className="flex items-start">
-                  <svg className="h-6 w-6 text-green-500 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  <svg
+                    className="h-6 w-6 text-green-500 mr-3 mt-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
                   </svg>
-                  <span className="text-gray-700">Learn patience and commitment to long-term goals</span>
+                  <span className="text-gray-700">
+                    Learn patience and commitment to long-term goals
+                  </span>
                 </li>
                 <li className="flex items-start">
-                  <svg className="h-6 w-6 text-green-500 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  <svg
+                    className="h-6 w-6 text-green-500 mr-3 mt-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
                   </svg>
-                  <span className="text-gray-700">Carry these lessons into academic performance</span>
+                  <span className="text-gray-700">
+                    Carry these lessons into academic performance
+                  </span>
                 </li>
               </ul>
             </motion.div>
@@ -195,26 +273,65 @@ export default function Benefits() {
                 Boost Fitness & Coordination
               </h3>
               <p className="text-lg text-gray-600 mb-6">
-                BJJ makes exercise fun! Kids get a full-body workout without even realizing it. For our youngest students, learning happens through games and play. Older kids develop through structured drills that build strength, flexibility, and coordination.
+                BJJ makes exercise fun! Kids get a full-body workout without
+                even realizing it. For our youngest students, learning happens
+                through games and play. Older kids develop through structured
+                drills that build strength, flexibility, and coordination.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start">
-                  <svg className="h-6 w-6 text-green-500 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  <svg
+                    className="h-6 w-6 text-green-500 mr-3 mt-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
                   </svg>
-                  <span className="text-gray-700">Full-body workout disguised as fun</span>
+                  <span className="text-gray-700">
+                    Full-body workout disguised as fun
+                  </span>
                 </li>
                 <li className="flex items-start">
-                  <svg className="h-6 w-6 text-green-500 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  <svg
+                    className="h-6 w-6 text-green-500 mr-3 mt-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
                   </svg>
-                  <span className="text-gray-700">Develop balance, coordination, and body awareness</span>
+                  <span className="text-gray-700">
+                    Develop balance, coordination, and body awareness
+                  </span>
                 </li>
                 <li className="flex items-start">
-                  <svg className="h-6 w-6 text-green-500 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  <svg
+                    className="h-6 w-6 text-green-500 mr-3 mt-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
                   </svg>
-                  <span className="text-gray-700">Build healthy habits and active lifestyle early</span>
+                  <span className="text-gray-700">
+                    Build healthy habits and active lifestyle early
+                  </span>
                 </li>
               </ul>
             </motion.div>
