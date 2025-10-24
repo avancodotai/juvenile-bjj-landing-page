@@ -47,6 +47,19 @@ export default function Competitions() {
           <p className="mt-6 text-lg leading-8 text-gray-700">
             From local tournaments to international championships, our BJJ program at Next School prepares students to compete at the highest levels across the globe.
           </p>
+          <div className="mt-6">
+            <a
+              href="https://ibjjf.com/events/championships"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-orange-600 px-6 py-3 text-sm font-semibold text-white shadow-lg hover:bg-orange-700 transition-colors"
+            >
+              View IBJJF Championships
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
+          </div>
         </motion.div>
 
         {/* Major International Competitions */}
@@ -110,7 +123,18 @@ export default function Competitions() {
             >
               <div className="text-4xl mb-3">⚔️</div>
               <h4 className="text-lg font-bold text-gray-900 mb-2">ADCC World Championship</h4>
-              <p className="text-sm text-gray-600">The Olympics of submission grappling, held every two years.</p>
+              <p className="text-sm text-gray-600 mb-3">The Olympics of submission grappling, held every two years.</p>
+              <a
+                href="https://adcc-official.com/pages/adcc-youth"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs font-semibold text-orange-600 hover:text-orange-700 transition-colors"
+              >
+                Learn about ADCC Youth
+                <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
             </motion.div>
           </div>
         </motion.div>

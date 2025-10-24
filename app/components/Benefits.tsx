@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, Variants } from "framer-motion";
+import Image from "next/image";
 
 const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 60 },
@@ -103,11 +104,16 @@ export default function Benefits() {
               variants={slideInRight}
             >
               <motion.div
-                className="relative h-96 rounded-2xl bg-gradient-to-br from-yellow-200 to-yellow-400 flex items-center justify-center text-8xl shadow-2xl"
+                className="relative h-96 rounded-2xl overflow-hidden shadow-2xl"
                 whileHover={{ scale: 1.05, rotate: 2 }}
                 transition={{ duration: 0.3 }}
               >
-                💪
+                <Image
+                  src="/confidence.jpeg"
+                  alt="BJJ students demonstrating confidence"
+                  fill
+                  className="object-cover"
+                />
               </motion.div>
             </motion.div>
           </div>
@@ -159,11 +165,16 @@ export default function Benefits() {
               variants={slideInLeft}
             >
               <motion.div
-                className="relative h-96 rounded-2xl bg-gradient-to-br from-purple-200 to-purple-400 flex items-center justify-center text-8xl shadow-2xl"
+                className="relative h-96 rounded-2xl overflow-hidden shadow-2xl"
                 whileHover={{ scale: 1.05, rotate: -2 }}
                 transition={{ duration: 0.3 }}
               >
-                🙏
+                <Image
+                  src="/discipline.jpeg"
+                  alt="Young BJJ students practicing discipline and respect"
+                  fill
+                  className="object-cover"
+                />
               </motion.div>
             </motion.div>
           </div>
@@ -215,11 +226,16 @@ export default function Benefits() {
               variants={slideInRight}
             >
               <motion.div
-                className="relative h-96 rounded-2xl bg-gradient-to-br from-green-200 to-green-400 flex items-center justify-center text-8xl shadow-2xl"
+                className="relative h-96 rounded-2xl overflow-hidden shadow-2xl"
                 whileHover={{ scale: 1.05, rotate: 2 }}
                 transition={{ duration: 0.3 }}
               >
-                ⚡
+                <Image
+                  src="/fitness.jpg"
+                  alt="Children having fun while building fitness through BJJ"
+                  fill
+                  className="object-cover"
+                />
               </motion.div>
             </motion.div>
           </div>
