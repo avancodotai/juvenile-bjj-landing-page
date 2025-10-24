@@ -3,8 +3,35 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { fadeInUp, cardVariants } from "../utils/animations";
+import { useState } from "react";
+
+// Reusable SVG Components
+const CheckmarkIcon = ({ className = "w-5 h-5 text-yellow-300" }) => (
+  <svg
+    className={className}
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+    />
+  </svg>
+);
+
+const InstagramIcon = ({ className = "w-5 h-5" }) => (
+  <svg className={className} fill="currentColor" viewBox="0 0 24 24">
+    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+  </svg>
+);
 
 export default function MeetTheCoaches() {
+  const [showCarlDetails, setShowCarlDetails] = useState(false);
+  const [showYashDetails, setShowYashDetails] = useState(false);
+
   return (
     <section className="py-24 bg-gradient-to-br from-slate-50 via-gray-50 to-zinc-50 relative overflow-hidden">
       {/* Decorative Background */}
@@ -56,13 +83,14 @@ export default function MeetTheCoaches() {
           <div className="grid gap-8 md:grid-cols-2">
             {/* Black Belt Head Coach */}
             <motion.div
-              className="relative rounded-2xl shadow-xl overflow-hidden border border-gray-200 h-[600px]"
+              className="relative rounded-2xl shadow-xl overflow-hidden border border-gray-200 h-[600px] cursor-pointer md:cursor-default"
               custom={0}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-50px" }}
               variants={cardVariants}
               whileHover={{ y: -8, transition: { duration: 0.3 } }}
+              onClick={() => setShowCarlDetails(!showCarlDetails)}
             >
               {/* Background Image */}
               <Image
@@ -73,16 +101,31 @@ export default function MeetTheCoaches() {
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
 
-              {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-black/20"></div>
+              {/* Gradient Overlay - lighter on mobile when details hidden */}
+              <div className={`absolute inset-0 bg-gradient-to-t transition-all duration-300 ${
+                showCarlDetails
+                  ? 'from-black/95 via-black/60 to-black/20'
+                  : 'md:from-black/95 md:via-black/60 md:to-black/20 from-black/60 via-black/30 to-transparent'
+              }`}></div>
 
               {/* Belt Badge */}
               <div className="absolute top-4 right-4 bg-black text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
                 🥋 Black Belt
               </div>
 
+              {/* Mobile Tap Indicator */}
+              <div className={`md:hidden absolute top-4 left-4 bg-white/90 text-gray-900 px-3 py-2 rounded-full text-xs font-semibold shadow-lg transition-opacity duration-300 ${
+                showCarlDetails ? 'opacity-0' : 'opacity-100'
+              }`}>
+                Tap for details
+              </div>
+
               {/* Text Content Overlay */}
-              <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+              <div className={`absolute bottom-0 left-0 right-0 p-8 text-white transition-all duration-300 ${
+                showCarlDetails
+                  ? 'opacity-100 translate-y-0'
+                  : 'md:opacity-100 md:translate-y-0 opacity-0 translate-y-4 pointer-events-none md:pointer-events-auto'
+              }`}>
                 <h3 className="text-3xl font-bold mb-2">Prof Carl Varel</h3>
                 <p className="text-yellow-300 font-semibold mb-4 text-lg">
                   Head Coach & Black Belt Instructor
@@ -96,68 +139,44 @@ export default function MeetTheCoaches() {
                   like Carlson Gracie International, AJP Grand Slam, and
                   superfights in Thailand.
                 </p>
-                <div className="space-y-2 text-sm text-gray-200">
+                <div className="space-y-2 text-sm text-gray-200 mb-4">
                   <div className="flex items-center gap-2">
-                    <svg
-                      className="w-5 h-5 text-yellow-300"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
+                    <CheckmarkIcon />
                     <span>IBJJF Certified Black Belt</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <svg
-                      className="w-5 h-5 text-yellow-300"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
+                    <CheckmarkIcon />
                     <span>International Competition Experience</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <svg
-                      className="w-5 h-5 text-yellow-300"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
+                    <CheckmarkIcon />
                     <span>Specializes in Youth Development</span>
                   </div>
                 </div>
+                {/* Instagram Link */}
+                <a
+                  href="https://www.instagram.com/carlspies1010"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-4 py-2 rounded-full text-sm font-semibold transition-all shadow-lg"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <InstagramIcon />
+                  @carlspies1010
+                </a>
               </div>
             </motion.div>
 
             {/* Blue Belt Instructor */}
             <motion.div
-              className="relative rounded-2xl shadow-xl overflow-hidden border border-gray-200 h-[600px]"
+              className="relative rounded-2xl shadow-xl overflow-hidden border border-gray-200 h-[600px] cursor-pointer md:cursor-default"
               custom={1}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-50px" }}
               variants={cardVariants}
               whileHover={{ y: -8, transition: { duration: 0.3 } }}
+              onClick={() => setShowYashDetails(!showYashDetails)}
             >
               {/* Background Placeholder */}
               <div className="absolute inset-0 bg-gradient-to-br from-blue-200 to-blue-400 flex items-center justify-center">
@@ -167,16 +186,31 @@ export default function MeetTheCoaches() {
                 </div>
               </div>
 
-              {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-blue-900/95 via-blue-900/60 to-transparent"></div>
+              {/* Gradient Overlay - lighter on mobile when details hidden */}
+              <div className={`absolute inset-0 bg-gradient-to-t transition-all duration-300 ${
+                showYashDetails
+                  ? 'from-blue-900/95 via-blue-900/60 to-transparent'
+                  : 'md:from-blue-900/95 md:via-blue-900/60 md:to-transparent from-blue-900/60 via-blue-900/30 to-transparent'
+              }`}></div>
 
               {/* Belt Badge */}
               <div className="absolute top-4 right-4 bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
                 🥋 Blue Belt
               </div>
 
+              {/* Mobile Tap Indicator */}
+              <div className={`md:hidden absolute top-4 left-4 bg-white/90 text-gray-900 px-3 py-2 rounded-full text-xs font-semibold shadow-lg transition-opacity duration-300 ${
+                showYashDetails ? 'opacity-0' : 'opacity-100'
+              }`}>
+                Tap for details
+              </div>
+
               {/* Text Content Overlay */}
-              <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+              <div className={`absolute bottom-0 left-0 right-0 p-8 text-white transition-all duration-300 ${
+                showYashDetails
+                  ? 'opacity-100 translate-y-0'
+                  : 'md:opacity-100 md:translate-y-0 opacity-0 translate-y-4 pointer-events-none md:pointer-events-auto'
+              }`}>
                 <h3 className="text-3xl font-bold mb-2">Yashraj Singh</h3>
                 <p className="text-yellow-300 font-semibold mb-4 text-lg">
                   Blue Belt Instructor
@@ -187,56 +221,31 @@ export default function MeetTheCoaches() {
                   focus on fundamentals and character development, they create a
                   supportive learning environment for all students.
                 </p>
-                <div className="space-y-2 text-sm text-gray-200">
+                <div className="space-y-2 text-sm text-gray-200 mb-4">
                   <div className="flex items-center gap-2">
-                    <svg
-                      className="w-5 h-5 text-yellow-300"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
+                    <CheckmarkIcon />
                     <span>Certified Blue Belt Instructor</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <svg
-                      className="w-5 h-5 text-yellow-300"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
+                    <CheckmarkIcon />
                     <span>Experienced in Youth Training</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <svg
-                      className="w-5 h-5 text-yellow-300"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
+                    <CheckmarkIcon />
                     <span>Focus on Fundamentals & Safety</span>
                   </div>
                 </div>
+                {/* Instagram Link */}
+                <a
+                  href="https://www.instagram.com/thegodspeed_juggernaut"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-4 py-2 rounded-full text-sm font-semibold transition-all shadow-lg"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <InstagramIcon />
+                  @thegodspeed_juggernaut
+                </a>
               </div>
             </motion.div>
           </div>
