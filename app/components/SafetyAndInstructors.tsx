@@ -1,17 +1,17 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
-const fadeInUp = {
+const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 40 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: [0.0, 0.0, 0.2, 1.0] },
+    transition: { duration: 0.6,  },
   },
 };
 
-const cardSlideIn = {
+const cardSlideIn: Variants = {
   hidden: { opacity: 0, x: -40 },
   visible: (i: number) => ({
     opacity: 1,
@@ -19,7 +19,6 @@ const cardSlideIn = {
     transition: {
       delay: i * 0.2,
       duration: 0.6,
-      ease: [0.0, 0.0, 0.2, 1.0],
     },
   }),
 };
