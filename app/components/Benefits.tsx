@@ -1,34 +1,8 @@
 "use client";
 
-import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
-
-const fadeInUp: Variants = {
-  hidden: { opacity: 0, y: 60 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.6 },
-  },
-};
-
-const slideInLeft: Variants = {
-  hidden: { opacity: 0, x: -60 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: { duration: 0.7 },
-  },
-};
-
-const slideInRight: Variants = {
-  hidden: { opacity: 0, x: 60 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: { duration: 0.7 },
-  },
-};
+import { fadeInUp, slideInLeft, slideInRight } from "../utils/animations";
 
 export default function Benefits() {
   return (
