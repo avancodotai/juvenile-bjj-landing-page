@@ -63,7 +63,7 @@ export default function PedagogyAndCurriculum() {
           </h3>
           <div className="grid gap-8 md:grid-cols-3">
             <motion.div
-              className="bg-white p-8 rounded-2xl shadow-lg border border-emerald-100 hover:shadow-xl transition-all"
+              className="relative bg-white rounded-2xl shadow-lg border border-emerald-100 hover:shadow-xl transition-all overflow-hidden"
               custom={0}
               initial="hidden"
               whileInView="visible"
@@ -71,42 +71,55 @@ export default function PedagogyAndCurriculum() {
               variants={cardVariants}
               whileHover={{ y: -5 }}
             >
-              <div className="text-4xl mb-4">👶</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Ages 4-7</h3>
-              <p className="text-sm text-gray-600 mb-4">
-                <strong>Little Champions</strong> — Learning through play and
-                games
-              </p>
-              <div className="bg-emerald-50 p-3 rounded-lg mb-3">
-                <p className="text-xs font-semibold text-emerald-700 mb-1">
-                  🎮 Focus: Play-Based Learning
-                </p>
-                <p className="text-xs text-gray-600">
-                  All techniques taught through fun games and activities
-                </p>
+              {/* Image Section */}
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="/four-seven.jpg"
+                  alt="Ages 4-7 BJJ training"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                <div className="absolute bottom-4 left-6 text-white">
+                  <h3 className="text-2xl font-bold">Ages 4-7</h3>
+                  <p className="text-sm text-gray-100">
+                    <strong>Little Champions</strong> — Learning through play and
+                    games
+                  </p>
+                </div>
               </div>
-              <ul className="text-sm text-gray-700 space-y-2">
-                <li className="flex items-start">
-                  <span className="text-emerald-500 mr-2">✓</span>
-                  <span>Interactive games and movement exploration</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-emerald-500 mr-2">✓</span>
-                  <span>Basic positions discovered through play</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-emerald-500 mr-2">✓</span>
-                  <span>Coordination and motor skill development</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-emerald-500 mr-2">✓</span>
-                  <span>Social skills and following instructions</span>
-                </li>
-              </ul>
+              {/* Content Section */}
+              <div className="p-6">
+                <div className="bg-emerald-50 p-3 rounded-lg mb-3">
+                  <p className="text-xs font-semibold text-emerald-700 mb-1">
+                    🎮 Focus: Play-Based Learning
+                  </p>
+                  <p className="text-xs text-gray-600">
+                    All techniques taught through fun games and activities
+                  </p>
+                </div>
+                <ul className="text-sm text-gray-700 space-y-2">
+                  <li className="flex items-start">
+                    <span className="text-emerald-500 mr-2">✓</span>
+                    <span>Interactive games and movement exploration</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-emerald-500 mr-2">✓</span>
+                    <span>Basic positions discovered through play</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-emerald-500 mr-2">✓</span>
+                    <span>Coordination and motor skill development</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-emerald-500 mr-2">✓</span>
+                    <span>Social skills and following instructions</span>
+                  </li>
+                </ul>
+              </div>
             </motion.div>
 
             <motion.div
-              className="bg-white p-8 rounded-2xl shadow-lg border border-emerald-100 hover:shadow-xl transition-all"
+              className="relative bg-white rounded-2xl shadow-lg border border-emerald-100 hover:shadow-xl transition-all overflow-hidden"
               custom={1}
               initial="hidden"
               whileInView="visible"
@@ -114,44 +127,55 @@ export default function PedagogyAndCurriculum() {
               variants={cardVariants}
               whileHover={{ y: -5 }}
             >
-              <div className="text-4xl mb-4">🧒</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">
-                Ages 8-12
-              </h3>
-              <p className="text-sm text-gray-600 mb-4">
-                <strong>Core Program</strong> — Structured curriculum with
-                systematic progression
-              </p>
-              <div className="bg-blue-50 p-3 rounded-lg mb-3">
-                <p className="text-xs font-semibold text-blue-700 mb-1">
-                  📋 Focus: Structured Learning
-                </p>
-                <p className="text-xs text-gray-600">
-                  Systematic curriculum with clear progression path
-                </p>
+              {/* Image Section */}
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="/eight-twelve.jpg"
+                  alt="Ages 8-12 BJJ training"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                <div className="absolute bottom-4 left-6 text-white">
+                  <h3 className="text-2xl font-bold">Ages 8-12</h3>
+                  <p className="text-sm text-gray-100">
+                    <strong>Core Program</strong> — Structured curriculum with
+                    systematic progression
+                  </p>
+                </div>
               </div>
-              <ul className="text-sm text-gray-700 space-y-2">
-                <li className="flex items-start">
-                  <span className="text-emerald-500 mr-2">✓</span>
-                  <span>Comprehensive technique curriculum</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-emerald-500 mr-2">✓</span>
-                  <span>Live drilling and controlled sparring</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-emerald-500 mr-2">✓</span>
-                  <span>Competition preparation (optional)</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-emerald-500 mr-2">✓</span>
-                  <span>Problem-solving and strategy development</span>
-                </li>
-              </ul>
+              {/* Content Section */}
+              <div className="p-6">
+                <div className="bg-blue-50 p-3 rounded-lg mb-3">
+                  <p className="text-xs font-semibold text-blue-700 mb-1">
+                    📋 Focus: Structured Learning
+                  </p>
+                  <p className="text-xs text-gray-600">
+                    Systematic curriculum with clear progression path
+                  </p>
+                </div>
+                <ul className="text-sm text-gray-700 space-y-2">
+                  <li className="flex items-start">
+                    <span className="text-emerald-500 mr-2">✓</span>
+                    <span>Comprehensive technique curriculum</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-emerald-500 mr-2">✓</span>
+                    <span>Live drilling and controlled sparring</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-emerald-500 mr-2">✓</span>
+                    <span>Competition preparation (optional)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-emerald-500 mr-2">✓</span>
+                    <span>Problem-solving and strategy development</span>
+                  </li>
+                </ul>
+              </div>
             </motion.div>
 
             <motion.div
-              className="bg-white p-8 rounded-2xl shadow-lg border border-emerald-100 hover:shadow-xl transition-all"
+              className="relative bg-white rounded-2xl shadow-lg border border-emerald-100 hover:shadow-xl transition-all overflow-hidden"
               custom={2}
               initial="hidden"
               whileInView="visible"
@@ -159,40 +183,51 @@ export default function PedagogyAndCurriculum() {
               variants={cardVariants}
               whileHover={{ y: -5 }}
             >
-              <div className="text-4xl mb-4">👦</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">
-                Ages 13-18
-              </h3>
-              <p className="text-sm text-gray-600 mb-4">
-                <strong>Advanced Athletes</strong> — Advanced structured
-                training
-              </p>
-              <div className="bg-purple-50 p-3 rounded-lg mb-3">
-                <p className="text-xs font-semibold text-purple-700 mb-1">
-                  🎯 Focus: Advanced Curriculum
-                </p>
-                <p className="text-xs text-gray-600">
-                  Intensive structured program for competitive edge
-                </p>
+              {/* Image Section */}
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="/thirteen-above.jpg"
+                  alt="Ages 13-18 BJJ training"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                <div className="absolute bottom-4 left-6 text-white">
+                  <h3 className="text-2xl font-bold">Ages 13-18</h3>
+                  <p className="text-sm text-gray-100">
+                    <strong>Advanced Athletes</strong> — Advanced structured
+                    training
+                  </p>
+                </div>
               </div>
-              <ul className="text-sm text-gray-700 space-y-2">
-                <li className="flex items-start">
-                  <span className="text-emerald-500 mr-2">✓</span>
-                  <span>Advanced techniques and concepts</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-emerald-500 mr-2">✓</span>
-                  <span>Competition training and strategy</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-emerald-500 mr-2">✓</span>
-                  <span>Strength and conditioning integration</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-emerald-500 mr-2">✓</span>
-                  <span>Leadership development opportunities</span>
-                </li>
-              </ul>
+              {/* Content Section */}
+              <div className="p-6">
+                <div className="bg-purple-50 p-3 rounded-lg mb-3">
+                  <p className="text-xs font-semibold text-purple-700 mb-1">
+                    🎯 Focus: Advanced Curriculum
+                  </p>
+                  <p className="text-xs text-gray-600">
+                    Intensive structured program for competitive edge
+                  </p>
+                </div>
+                <ul className="text-sm text-gray-700 space-y-2">
+                  <li className="flex items-start">
+                    <span className="text-emerald-500 mr-2">✓</span>
+                    <span>Advanced techniques and concepts</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-emerald-500 mr-2">✓</span>
+                    <span>Competition training and strategy</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-emerald-500 mr-2">✓</span>
+                    <span>Strength and conditioning integration</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-emerald-500 mr-2">✓</span>
+                    <span>Leadership development opportunities</span>
+                  </li>
+                </ul>
+              </div>
             </motion.div>
           </div>
         </div>

@@ -48,7 +48,7 @@ export default function ProgramStructure() {
         <div className="mx-auto max-w-5xl">
           <div className="grid gap-8 md:grid-cols-3 mb-12">
             <motion.div
-              className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100"
+              className="relative h-80 rounded-2xl shadow-lg border border-gray-100 overflow-hidden"
               custom={0}
               initial="hidden"
               whileInView="visible"
@@ -56,15 +56,24 @@ export default function ProgramStructure() {
               variants={cardVariants}
               whileHover={{ y: -5, transition: { duration: 0.2 } }}
             >
-              <div className="text-4xl mb-4">👶</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Ages 4-7</h3>
-              <p className="text-gray-600">
-                Fun games and basic movements to introduce BJJ concepts while
-                developing motor skills.
-              </p>
+              <div className="absolute inset-0">
+                <img
+                  src="/four-seven.jpg"
+                  alt="Ages 4-7 BJJ training"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
+              </div>
+              <div className="relative h-full p-8 flex flex-col justify-end text-white">
+                <h3 className="text-2xl font-bold mb-3">Ages 4-7</h3>
+                <p className="text-gray-100">
+                  Fun games and basic movements to introduce BJJ concepts while
+                  developing motor skills.
+                </p>
+              </div>
             </motion.div>
             <motion.div
-              className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 ring-2 ring-blue-600"
+              className="relative h-80 rounded-2xl shadow-lg border border-gray-100 ring-2 ring-blue-600 overflow-hidden"
               custom={1}
               initial="hidden"
               whileInView="visible"
@@ -72,17 +81,24 @@ export default function ProgramStructure() {
               variants={cardVariants}
               whileHover={{ y: -5, transition: { duration: 0.2 } }}
             >
-              <div className="text-4xl mb-4">🧒</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">
-                Ages 8-12
-              </h3>
-              <p className="text-gray-600">
-                Structured drills with technique focus, building a strong
-                foundation in BJJ fundamentals.
-              </p>
+              <div className="absolute inset-0">
+                <img
+                  src="/eight-twelve.jpg"
+                  alt="Ages 8-12 BJJ training"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
+              </div>
+              <div className="relative h-full p-8 flex flex-col justify-end text-white">
+                <h3 className="text-2xl font-bold mb-3">Ages 8-12</h3>
+                <p className="text-gray-100">
+                  Structured drills with technique focus, building a strong
+                  foundation in BJJ fundamentals.
+                </p>
+              </div>
             </motion.div>
             <motion.div
-              className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100"
+              className="relative h-80 rounded-2xl shadow-lg border border-gray-100 overflow-hidden"
               custom={2}
               initial="hidden"
               whileInView="visible"
@@ -90,14 +106,21 @@ export default function ProgramStructure() {
               variants={cardVariants}
               whileHover={{ y: -5, transition: { duration: 0.2 } }}
             >
-              <div className="text-4xl mb-4">👦</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">
-                Ages 13-18
-              </h3>
-              <p className="text-gray-600">
-                Advanced techniques and competition preparation for serious
-                young athletes.
-              </p>
+              <div className="absolute inset-0">
+                <img
+                  src="/thirteen-above.jpg"
+                  alt="Ages 13-18 BJJ training"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
+              </div>
+              <div className="relative h-full p-8 flex flex-col justify-end text-white">
+                <h3 className="text-2xl font-bold mb-3">Ages 13-18</h3>
+                <p className="text-gray-100">
+                  Advanced techniques and competition preparation for serious
+                  young athletes.
+                </p>
+              </div>
             </motion.div>
           </div>
 
