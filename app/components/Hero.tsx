@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Hero() {
   const [isVideoPlaying, setIsVideoPlaying] = useState(true);
@@ -41,6 +42,14 @@ export default function Hero() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6 }}
             >
+              <Image
+                src="/next-logo.png"
+                alt="Next School"
+                width={120}
+                height={80}
+                className="h-16 sm:h-20 w-auto"
+                priority
+              />
               <span className="text-5xl sm:text-6xl">🥋</span>
             </motion.div>
             <motion.h1
