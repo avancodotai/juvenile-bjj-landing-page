@@ -39,7 +39,7 @@ export default function Hero() {
               className="flex items-center justify-center lg:justify-start gap-4 mb-6"
               initial={{ opacity: 0, scale: 0 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
+              transition={{ duration: 0.6, ease: [0.0, 0.0, 0.2, 1.0] }}
             >
               <span className="text-5xl sm:text-6xl">🥋</span>
             </motion.div>
@@ -47,7 +47,7 @@ export default function Hero() {
               className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl mb-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+              transition={{ duration: 0.8, ease: [0.0, 0.0, 0.2, 1.0], delay: 0.2 }}
             >
               Give Your Child the Gift of{" "}
               <span className="text-yellow-300">Confidence</span>
@@ -56,7 +56,7 @@ export default function Hero() {
               className="mt-4 text-lg sm:text-xl leading-8 text-blue-50"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+              transition={{ duration: 0.8, delay: 0.2, ease: [0.0, 0.0, 0.2, 1.0] }}
             >
               Brazilian Jiu-Jitsu isn't just a martial art — it's a life-changing journey that builds confidence, discipline, and resilience in kids.
             </motion.p>
@@ -64,7 +64,7 @@ export default function Hero() {
               className="mt-3 text-base text-blue-100"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+              transition={{ duration: 0.8, delay: 0.4, ease: [0.0, 0.0, 0.2, 1.0] }}
             >
               Now launching at Next School • Ages 4-18 • Open to all
             </motion.p>
@@ -72,7 +72,7 @@ export default function Hero() {
               className="mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
+              transition={{ duration: 0.8, delay: 0.6, ease: [0.0, 0.0, 0.2, 1.0] }}
             >
               <motion.button
                 data-tally-open="wzpyaa"
@@ -98,7 +98,7 @@ export default function Hero() {
             className="relative mx-auto max-w-sm lg:max-w-none"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+            transition={{ duration: 0.8, delay: 0.4, ease: [0.0, 0.0, 0.2, 1.0] }}
           >
             {/* Phone Mockup Frame for Desktop */}
             <div className="relative mx-auto" style={{ maxWidth: '360px' }}>
