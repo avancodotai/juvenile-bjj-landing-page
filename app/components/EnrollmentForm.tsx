@@ -111,7 +111,7 @@ export default function EnrollmentForm() {
               data-tally-open="wzpyaa"
               data-tally-emoji-text="👋"
               data-tally-emoji-animation="wave"
-              className="inline-block rounded-full bg-gradient-to-r from-violet-600 to-fuchsia-600 px-12 py-5 text-xl font-semibold text-white shadow-xl hover:from-violet-700 hover:to-fuchsia-700 transition-all cursor-pointer"
+              className="inline-block rounded-full bg-gradient-to-r from-violet-600 to-fuchsia-600 px-6 py-4 text-base sm:px-12 sm:py-5 sm:text-xl font-semibold text-white shadow-xl hover:from-violet-700 hover:to-fuchsia-700 transition-all cursor-pointer"
               whileHover={{
                 scale: 1.05,
                 boxShadow: "0 20px 40px rgba(139, 92, 246, 0.3)",
