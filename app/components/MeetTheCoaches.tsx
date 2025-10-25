@@ -182,20 +182,21 @@ export default function MeetTheCoaches() {
               whileHover={{ y: -8, transition: { duration: 0.3 } }}
               onClick={() => setShowYashDetails(!showYashDetails)}
             >
-              {/* Background Placeholder */}
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-200 to-blue-400 flex items-center justify-center">
-                <div className="text-center text-white">
-                  <div className="text-8xl mb-4">👤</div>
-                  <p className="text-lg font-semibold">Photo Coming Soon</p>
-                </div>
-              </div>
+              {/* Background Image */}
+              <Image
+                src="/yash.jpeg"
+                alt="Blue Belt Instructor"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
 
               {/* Gradient Overlay - lighter on mobile when details hidden */}
               <div
                 className={`absolute inset-0 bg-gradient-to-t transition-all duration-300 ${
                   showYashDetails
-                    ? "from-blue-900/95 via-blue-900/60 to-transparent"
-                    : "md:from-blue-900/95 md:via-blue-900/60 md:to-transparent from-blue-900/60 via-blue-900/30 to-transparent"
+                    ? "from-black/95 via-black/60 to-black/20"
+                    : "md:from-black/95 md:via-black/60 md:to-black/20 from-black/60 via-black/30 to-transparent"
                 }`}
               ></div>
 
