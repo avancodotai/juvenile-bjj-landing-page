@@ -80,21 +80,19 @@ export default function Hero() {
               Now launching at Next School • Ages 4-18 • Open to all
             </motion.p>
             <motion.div
-              className="mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4"
+              className="mt-8 flex flex-col items-center justify-center lg:justify-start gap-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              <motion.button
-                data-tally-open="wzpyaa"
-                data-tally-emoji-text="👋"
-                data-tally-emoji-animation="wave"
-                className="w-full sm:w-auto rounded-full bg-yellow-400 px-8 py-4 text-lg font-semibold text-blue-900 shadow-lg hover:bg-yellow-300 transition-all text-center cursor-pointer"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Enroll Your Child
-              </motion.button>
+              <div className="w-full sm:w-auto rounded-2xl bg-white/95 backdrop-blur-sm px-8 py-6 shadow-xl text-center">
+                <p className="text-lg font-bold text-blue-900 mb-2">
+                  Interested in Our BJJ Program?
+                </p>
+                <p className="text-base text-gray-700">
+                  Please contact Next School directly for more information about enrollment and class schedules.
+                </p>
+              </div>
               <a
                 href="#learn-more"
                 className="text-lg font-semibold leading-6 text-white hover:text-yellow-300 transition-colors"

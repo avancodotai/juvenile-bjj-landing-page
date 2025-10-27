@@ -21,10 +21,10 @@ export default function EnrollmentForm() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl font-bold text-gray-900 mb-3">
-            Join BJJ at Next School
+            Get Started with BJJ at Next School
           </h2>
           <p className="text-base text-gray-600">
-            Reserve your child's spot or request more information
+            Contact us to learn more about the program
           </p>
         </motion.div>
 
@@ -36,100 +36,58 @@ export default function EnrollmentForm() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 lg:gap-8">
-            {/* Left side - Info and checklist */}
-            <div className="flex-1">
-              <div className="flex items-start gap-3 mb-4">
-                <motion.div
-                  className="text-4xl"
-                  animate={{
-                    scale: [1, 1.1, 1],
-                    rotate: [0, 5, -5, 0],
-                  }}
-                  transition={{ duration: 2, repeat: Infinity, repeatDelay: 2 }}
-                >
-                  🥋
-                </motion.div>
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-1">
-                    Ready to Get Started?
-                  </h3>
-                  <p className="text-sm text-gray-600">
-                    Fill out our quick form to reserve your child's spot. We'll get back to you within 24 hours!
-                  </p>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-2 mt-4">
-                <div className="flex items-center gap-2 text-sm text-gray-700">
-                  <svg
-                    className="w-5 h-5 text-violet-600 flex-shrink-0"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                  <span>Quick 2-minute form</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-gray-700">
-                  <svg
-                    className="w-5 h-5 text-violet-600 flex-shrink-0"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                  <span>No commitment required</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-gray-700">
-                  <svg
-                    className="w-5 h-5 text-violet-600 flex-shrink-0"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                  <span>Free demo class available</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Right side - CTA button */}
-            <div className="flex flex-col items-center lg:items-end gap-3">
-              <motion.button
-                data-tally-open="wzpyaa"
-                data-tally-emoji-text="👋"
-                data-tally-emoji-animation="wave"
-                className="inline-block rounded-full bg-gradient-to-r from-violet-600 to-fuchsia-600 px-8 py-4 text-base sm:text-lg font-semibold text-white shadow-xl hover:from-violet-700 hover:to-fuchsia-700 transition-all cursor-pointer whitespace-nowrap"
-                whileHover={{
-                  scale: 1.05,
-                  boxShadow: "0 20px 40px rgba(139, 92, 246, 0.3)",
+          <div className="text-center">
+            <div className="flex justify-center mb-6">
+              <motion.div
+                className="text-5xl"
+                animate={{
+                  scale: [1, 1.1, 1],
+                  rotate: [0, 5, -5, 0],
                 }}
-                whileTap={{ scale: 0.95 }}
+                transition={{ duration: 2, repeat: Infinity, repeatDelay: 2 }}
               >
-                Open Enrollment Form
-              </motion.button>
-              <p className="text-xs text-gray-500 text-center lg:text-right max-w-[200px]">
-                Have questions? The form includes space for any questions!
-              </p>
+                🥋
+              </motion.div>
+            </div>
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              Ready to Get Started?
+            </h3>
+            <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
+              To learn more about our BJJ program, class schedules, and enrollment details, please contact Next School directly.
+            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-gray-600">
+              <div className="flex items-center gap-2">
+                <svg
+                  className="w-5 h-5 text-violet-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+                <span className="text-sm font-medium">Contact the school office</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <svg
+                  className="w-5 h-5 text-violet-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span className="text-sm font-medium">Free demo class available</span>
+              </div>
             </div>
           </div>
         </motion.div>

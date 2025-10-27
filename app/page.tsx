@@ -6,7 +6,6 @@ import SafetyAndInstructors from "./components/SafetyAndInstructors";
 import MeetTheCoaches from "./components/MeetTheCoaches";
 import Competitions from "./components/Competitions";
 import FAQ from "./components/FAQ";
-import EnrollmentForm from "./components/EnrollmentForm";
 import Footer from "./components/Footer";
 
 export default function Home() {
@@ -20,7 +19,6 @@ export default function Home() {
       <MeetTheCoaches />
       <Competitions />
       <FAQ />
-      <EnrollmentForm />
       <Footer />
     </div>
   );

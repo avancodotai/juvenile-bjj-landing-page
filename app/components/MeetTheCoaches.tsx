@@ -65,16 +65,7 @@ export default function MeetTheCoaches() {
           >
             <span className="text-2xl">🥋</span>
             <p className="text-sm font-semibold text-gray-900">
-              In affiliation with{" "}
-              <a
-                href="https://www.westbaybjj.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:text-blue-700 hover:underline transition-colors"
-              >
-                Westbay BJJ
-              </a>{" "}
-              • Under Prof. Olavo Abreu lineage
+              In affiliation with Westbay BJJ • Under Prof. Olavo Abreu lineage
             </p>
           </motion.div>
         </motion.div>
@@ -143,7 +134,7 @@ export default function MeetTheCoaches() {
                   India gold medalist, Asian medalist, and has won BJJ Nationals
                   multiple times.
                 </p>
-                <div className="space-y-2 text-sm text-gray-200 mb-4">
+                <div className="space-y-2 text-sm text-gray-200">
                   <div className="flex items-center gap-2">
                     <CheckmarkIcon />
                     <span>IBJJF Certified Black Belt</span>
@@ -157,17 +148,6 @@ export default function MeetTheCoaches() {
                     <span>Specializes in Youth Development</span>
                   </div>
                 </div>
-                {/* Instagram Link */}
-                <a
-                  href="https://www.instagram.com/carlspies1010"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-4 py-2 rounded-full text-sm font-semibold transition-all shadow-lg"
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  <InstagramIcon />
-                  @carlspies1010
-                </a>
               </div>
             </motion.div>
 
@@ -232,7 +212,7 @@ export default function MeetTheCoaches() {
                   focus on fundamentals and character development, they create a
                   supportive learning environment for all students.
                 </p>
-                <div className="space-y-2 text-sm text-gray-200 mb-4">
+                <div className="space-y-2 text-sm text-gray-200">
                   <div className="flex items-center gap-2">
                     <CheckmarkIcon />
                     <span>Certified Blue Belt Instructor</span>
@@ -246,17 +226,6 @@ export default function MeetTheCoaches() {
                     <span>Focus on Fundamentals & Safety</span>
                   </div>
                 </div>
-                {/* Instagram Link */}
-                <a
-                  href="https://www.instagram.com/thegodspeed_juggernaut"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-4 py-2 rounded-full text-sm font-semibold transition-all shadow-lg"
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  <InstagramIcon />
-                  @thegodspeed_juggernaut
-                </a>
               </div>
             </motion.div>
           </div>
