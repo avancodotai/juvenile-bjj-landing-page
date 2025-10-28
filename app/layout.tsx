@@ -13,28 +13,28 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "BJJ for Kids at Next School | Brazilian Jiu-Jitsu Program",
+  title: "Westbay BJJ at Next School | Brazilian Jiu-Jitsu for Kids Ages 4-18",
   description:
-    "Empower your child with confidence, discipline, and fitness through Brazilian Jiu-Jitsu. Safe, fun, and educational martial arts program for ages 4-18 at Next School.",
+    "Westbay Brazilian Jiu-Jitsu Academy brings world-class BJJ instruction to Next School. Build confidence, discipline, and resilience in your child through expert martial arts training for ages 4-18.",
   openGraph: {
-    title: "BJJ for Kids at Next School | Brazilian Jiu-Jitsu Program",
+    title: "Westbay BJJ at Next School | Brazilian Jiu-Jitsu for Kids Ages 4-18",
     description:
-      "Empower your child with confidence, discipline, and fitness through Brazilian Jiu-Jitsu. Safe, fun, and educational martial arts program for ages 4-18 at Next School.",
+      "Westbay Brazilian Jiu-Jitsu Academy brings world-class BJJ instruction to Next School. Build confidence, discipline, and resilience in your child through expert martial arts training for ages 4-18.",
     type: "website",
     images: [
       {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "BJJ for Kids at Next School",
+        alt: "Westbay BJJ at Next School",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "BJJ for Kids at Next School | Brazilian Jiu-Jitsu Program",
+    title: "Westbay BJJ at Next School | Brazilian Jiu-Jitsu for Kids Ages 4-18",
     description:
-      "Empower your child with confidence, discipline, and fitness through Brazilian Jiu-Jitsu. Safe, fun, and educational martial arts program for ages 4-18 at Next School.",
+      "Westbay Brazilian Jiu-Jitsu Academy brings world-class BJJ instruction to Next School. Build confidence, discipline, and resilience in your child through expert martial arts training for ages 4-18.",
   },
 };
 
