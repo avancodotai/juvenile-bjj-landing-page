@@ -19,7 +19,7 @@ export default function Footer() {
               alt="Next School"
               width={100}
               height={66}
-              className="h-10 w-auto"
+              className="h-12 w-auto"
             />
           </div>
           <h3 className="text-2xl font-bold mb-4 text-gray-900">

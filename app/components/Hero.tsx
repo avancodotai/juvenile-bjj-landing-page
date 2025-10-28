@@ -56,7 +56,7 @@ export default function Hero() {
                 alt="Next School"
                 width={120}
                 height={80}
-                className="h-12 sm:h-16 w-auto"
+                className="h-14 sm:h-18 w-auto"
               />
             </motion.div>
             <motion.h1
