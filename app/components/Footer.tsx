@@ -9,9 +9,9 @@ export default function Footer() {
             <Image
               src="/westbay.png"
               alt="Westbay Brazilian Jiu-Jitsu"
-              width={200}
-              height={100}
-              className="h-14 w-auto"
+              width={280}
+              height={80}
+              className="h-12 w-auto"
             />
             <span className="text-xl text-gray-400">×</span>
             <Image

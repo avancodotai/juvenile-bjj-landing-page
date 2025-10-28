@@ -45,9 +45,9 @@ export default function Hero() {
               <Image
                 src="/westbay.png"
                 alt="Westbay Brazilian Jiu-Jitsu"
-                width={240}
-                height={120}
-                className="h-16 sm:h-20 w-auto"
+                width={320}
+                height={100}
+                className="h-14 sm:h-18 w-auto"
                 priority
               />
               <span className="text-2xl sm:text-3xl text-white/60">×</span>
