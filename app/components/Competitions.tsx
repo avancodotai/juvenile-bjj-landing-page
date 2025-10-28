@@ -103,9 +103,8 @@ export default function Competitions() {
             Championship Opportunities Await
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-700">
-            From local tournaments to international championships, our BJJ
-            program at Next School prepares students to compete at the highest
-            levels across the globe.
+            From local tournaments to international championships, Westbay BJJ
+            prepares students to compete at the highest levels across the globe.
           </p>
           <div className="mt-6">
             <a
@@ -422,7 +421,7 @@ export default function Competitions() {
           </div>
           <p className="text-center text-sm text-gray-600 mt-6 italic">
             Note: Competition participation is optional and based on individual
-            readiness and interest. We'll host one friendly in-house competition
+            readiness and interest. Westbay BJJ will host one friendly in-house competition
             per term at Next School!
           </p>
         </motion.div>

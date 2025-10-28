@@ -34,10 +34,10 @@ export default function SafetyAndInstructors() {
             YOUR CHILD'S SAFETY IS OUR PRIORITY
           </h2>
           <p className="mt-2 text-4xl font-bold tracking-tight sm:text-5xl">
-            Expert Instruction at Next School
+            Expert Westbay BJJ Instruction
           </p>
           <p className="mt-4 text-lg text-gray-300">
-            World-class BJJ instruction at a safe, supervised campus environment
+            World-class instruction from Westbay Academy at Next School's safe, supervised campus
           </p>
         </motion.div>
 

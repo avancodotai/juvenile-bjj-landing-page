@@ -21,10 +21,10 @@ export default function EnrollmentForm() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl font-bold text-gray-900 mb-3">
-            Get Started with BJJ at Next School
+            Get Started with Westbay BJJ
           </h2>
           <p className="text-base text-gray-600">
-            Contact us to learn more about the program
+            Contact us to learn more about our program at Next School
           </p>
         </motion.div>
 
@@ -53,7 +53,7 @@ export default function EnrollmentForm() {
               Ready to Get Started?
             </h3>
             <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
-              To learn more about our BJJ program, class schedules, and enrollment details, please contact Next School directly.
+              To learn more about Westbay BJJ's program, class schedules, and enrollment details, please contact Next School directly.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-gray-600">
               <div className="flex items-center gap-2">

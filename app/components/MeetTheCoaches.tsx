@@ -65,7 +65,7 @@ export default function MeetTheCoaches() {
           >
             <span className="text-2xl">🥋</span>
             <p className="text-sm font-semibold text-gray-900">
-              In affiliation with Westbay BJJ • Under Prof. Olavo Abreu lineage
+              Westbay BJJ Academy • Under Prof. Olavo Abreu lineage
             </p>
           </motion.div>
         </motion.div>

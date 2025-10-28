@@ -37,20 +37,27 @@ export default function Hero() {
           {/* Text Content - Left Side */}
           <div className="text-center lg:text-left">
             <motion.div
-              className="flex items-center justify-center lg:justify-start gap-4 mb-6"
+              className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-6"
               initial={{ opacity: 0, scale: 0 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6 }}
             >
               <Image
+                src="/westbay.png"
+                alt="Westbay Brazilian Jiu-Jitsu"
+                width={240}
+                height={120}
+                className="h-16 sm:h-20 w-auto"
+                priority
+              />
+              <span className="text-2xl sm:text-3xl text-white/60">×</span>
+              <Image
                 src="/next-logo.png"
                 alt="Next School"
                 width={120}
                 height={80}
-                className="h-16 sm:h-20 w-auto"
-                priority
+                className="h-12 sm:h-16 w-auto"
               />
-              <span className="text-5xl sm:text-6xl">🥋</span>
             </motion.div>
             <motion.h1
               className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl mb-6"
@@ -77,7 +84,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Now launching at Next School • Ages 4-18 • Open to all
+              Westbay BJJ launching at Next School • Ages 4-18 • Open to all
             </motion.p>
             <motion.div
               className="mt-8 flex flex-col items-center justify-center lg:justify-start gap-4"
@@ -90,7 +97,7 @@ export default function Hero() {
                   Interested in Our BJJ Program?
                 </p>
                 <p className="text-base text-gray-700">
-                  Please contact Next School directly for more information about enrollment and class schedules.
+                  Contact Next School for more information about Westbay BJJ enrollment and class schedules.
                 </p>
               </div>
               <a
