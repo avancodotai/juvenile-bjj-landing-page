@@ -30,7 +30,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative bg-gradient-to-br from-blue-400 via-blue-500 to-indigo-600 text-white overflow-hidden">
+    <section className="relative bg-gradient-to-br from-blue-200 via-blue-500 to-indigo-600 text-white overflow-hidden">
       <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10"></div>
       <div className="relative mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:py-32 lg:px-8">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16 items-center">
@@ -52,11 +52,11 @@ export default function Hero() {
               />
               <span className="text-2xl sm:text-3xl text-white/60">×</span>
               <Image
-                src="/next-logo.png"
-                alt="Next School"
-                width={120}
-                height={80}
-                className="h-14 sm:h-18 w-auto"
+                src="/next-hub-logo.png"
+                alt="Next Hub"
+                width={240}
+                height={140}
+                className="h-12 sm:h-16 w-auto"
               />
             </motion.div>
             <motion.h1
