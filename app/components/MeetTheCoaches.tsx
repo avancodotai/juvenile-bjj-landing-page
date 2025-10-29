@@ -207,10 +207,13 @@ export default function MeetTheCoaches() {
                   Blue Belt Instructor
                 </p>
                 <p className="text-gray-100 mb-4 leading-relaxed">
-                  Our dedicated blue belt instructor brings energy, technical
-                  knowledge, and a student-first approach to every class. With a
-                  focus on fundamentals and character development, they create a
-                  supportive learning environment for all students.
+                  Yashraj Singh is an international competitive athlete and AJP
+                  India National Champion, with podiums including ADCC Thailand
+                  League silver and ADCC India bronze, bringing proven standards
+                  of excellence to every class. As a blue belt instructor, he
+                  prioritizes fundamentals, safety, and character development in
+                  a structured, student-first environment that builds confident,
+                  disciplined kids.
                 </p>
                 <div className="space-y-2 text-sm text-gray-200">
                   <div className="flex items-center gap-2">
@@ -219,7 +222,7 @@ export default function MeetTheCoaches() {
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckmarkIcon />
-                    <span>Experienced in Youth Training</span>
+                    <span>International Competition Experience</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckmarkIcon />
