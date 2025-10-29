@@ -32,7 +32,7 @@ export default function Hero() {
   return (
     <section className="relative bg-gradient-to-br from-blue-200 via-blue-500 to-indigo-600 text-white overflow-hidden">
       <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10"></div>
-      <div className="relative mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:py-32 lg:px-8">
+      <div className="relative mx-auto max-w-7xl px-6 py-16 sm:py-24 md:px-8 lg:py-32 lg:px-8">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16 items-center">
           {/* Text Content - Left Side */}
           <div className="text-center lg:text-left">
