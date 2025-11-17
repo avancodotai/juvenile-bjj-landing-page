@@ -37,7 +37,7 @@ export default function Hero() {
           {/* Text Content - Left Side */}
           <div className="text-center lg:text-left lg:pr-8">
             <motion.div
-              className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-6"
+              className="flex items-center justify-center lg:justify-start mb-6"
               initial={{ opacity: 0, scale: 0 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6 }}
@@ -45,18 +45,10 @@ export default function Hero() {
               <Image
                 src="/westbay.png"
                 alt="Westbay Brazilian Jiu-Jitsu"
-                width={320}
-                height={100}
-                className="h-14 sm:h-18 w-auto"
+                width={400}
+                height={125}
+                className="h-20 sm:h-24 w-auto"
                 priority
-              />
-              <span className="text-2xl sm:text-3xl text-white/60">×</span>
-              <Image
-                src="/next-hub-logo.png"
-                alt="Next Hub"
-                width={240}
-                height={140}
-                className="h-12 sm:h-16 w-auto"
               />
             </motion.div>
             <motion.h1
@@ -84,7 +76,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Westbay BJJ launching at Next School • Ages 4-18 • Open to all
+              Westbay Brazilian Jiu-Jitsu • Ages 4-18 • Multiple Mumbai Locations
             </motion.p>
             <motion.div
               className="mt-8 flex flex-col items-center justify-center lg:justify-start gap-4"
@@ -97,8 +89,8 @@ export default function Hero() {
                   Interested in Our BJJ Program?
                 </p>
                 <p className="text-base text-gray-700">
-                  Contact Next School for more information about Westbay BJJ
-                  enrollment and class schedules.
+                  Explore our locations below to find enrollment information
+                  and class schedules near you.
                 </p>
               </div>
               <a

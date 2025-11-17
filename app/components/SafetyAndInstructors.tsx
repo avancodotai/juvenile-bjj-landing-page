@@ -37,7 +37,7 @@ export default function SafetyAndInstructors() {
             Expert Westbay BJJ Instruction
           </p>
           <p className="mt-4 text-lg text-gray-300">
-            World-class instruction from Westbay Academy at Next School's safe, supervised campus
+            World-class instruction from Westbay Academy at safe, supervised facilities
           </p>
         </motion.div>
 

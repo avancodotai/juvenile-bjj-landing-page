@@ -148,6 +148,16 @@ export default function MeetTheCoaches() {
                     <span>Specializes in Youth Development</span>
                   </div>
                 </div>
+                {/* Instagram Link */}
+                <a
+                  href="https://www.instagram.com/carlspies1010"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 inline-flex items-center gap-2 text-white hover:text-yellow-300 transition-colors"
+                >
+                  <InstagramIcon />
+                  <span className="text-sm font-semibold">@carlspies1010</span>
+                </a>
               </div>
             </motion.div>
 
@@ -229,6 +239,16 @@ export default function MeetTheCoaches() {
                     <span>Focus on Fundamentals & Safety</span>
                   </div>
                 </div>
+                {/* Instagram Link */}
+                <a
+                  href="https://www.instagram.com/thegodspeed_juggernaut"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 inline-flex items-center gap-2 text-white hover:text-yellow-300 transition-colors"
+                >
+                  <InstagramIcon />
+                  <span className="text-sm font-semibold">@thegodspeed_juggernaut</span>
+                </a>
               </div>
             </motion.div>
           </div>

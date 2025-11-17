@@ -129,7 +129,7 @@ export default function PedagogyAndCurriculum() {
           variants={fadeInUp}
         >
           <h2 className="text-base font-semibold leading-7 text-emerald-600">
-            WESTBAY BJJ AT NEXT SCHOOL
+            WESTBAY BJJ
           </h2>
           <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
             Our Curriculum & Training System
@@ -435,7 +435,7 @@ export default function PedagogyAndCurriculum() {
                 </li>
                 <li className="flex items-center">
                   <span className="text-emerald-500 mr-2">🏋️</span>
-                  <span>Optional Saturday open mat at Next School</span>
+                  <span>Optional Saturday open mat sessions</span>
                 </li>
               </ul>
             </div>
@@ -590,8 +590,8 @@ export default function PedagogyAndCurriculum() {
           <div className="bg-white/80 p-6 rounded-xl text-center">
             <p className="text-sm text-gray-700">
               <strong className="text-emerald-700">Grading Ceremony:</strong>{" "}
-              Conducted by a certified Westbay BJJ Black Belt near term end at Next School
-              campus. Students receive belts and stripes in recognition of their
+              Conducted by a certified Westbay BJJ Black Belt near term end.
+              Students receive belts and stripes in recognition of their
               dedication and progress in front of their peers and families.
             </p>
           </div>

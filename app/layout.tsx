@@ -13,28 +13,28 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Westbay BJJ at Next School | Brazilian Jiu-Jitsu for Kids Ages 4-18",
+  title: "Westbay BJJ | Brazilian Jiu-Jitsu for Kids Ages 4-18 | Mumbai Locations",
   description:
-    "Westbay Brazilian Jiu-Jitsu Academy brings world-class BJJ instruction to Next School. Build confidence, discipline, and resilience in your child through expert martial arts training for ages 4-18.",
+    "Westbay Brazilian Jiu-Jitsu Academy offers world-class BJJ instruction at convenient Mumbai locations. Build confidence, discipline, and resilience in your child through expert martial arts training for ages 4-18.",
   openGraph: {
-    title: "Westbay BJJ at Next School | Brazilian Jiu-Jitsu for Kids Ages 4-18",
+    title: "Westbay BJJ | Brazilian Jiu-Jitsu for Kids Ages 4-18 | Mumbai Locations",
     description:
-      "Westbay Brazilian Jiu-Jitsu Academy brings world-class BJJ instruction to Next School. Build confidence, discipline, and resilience in your child through expert martial arts training for ages 4-18.",
+      "Westbay Brazilian Jiu-Jitsu Academy offers world-class BJJ instruction at convenient Mumbai locations. Build confidence, discipline, and resilience in your child through expert martial arts training for ages 4-18.",
     type: "website",
     images: [
       {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Westbay BJJ at Next School",
+        alt: "Westbay Brazilian Jiu-Jitsu",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Westbay BJJ at Next School | Brazilian Jiu-Jitsu for Kids Ages 4-18",
+    title: "Westbay BJJ | Brazilian Jiu-Jitsu for Kids Ages 4-18 | Mumbai Locations",
     description:
-      "Westbay Brazilian Jiu-Jitsu Academy brings world-class BJJ instruction to Next School. Build confidence, discipline, and resilience in your child through expert martial arts training for ages 4-18.",
+      "Westbay Brazilian Jiu-Jitsu Academy offers world-class BJJ instruction at convenient Mumbai locations. Build confidence, discipline, and resilience in your child through expert martial arts training for ages 4-18.",
   },
 };
 

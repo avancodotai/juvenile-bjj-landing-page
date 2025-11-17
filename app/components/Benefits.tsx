@@ -26,7 +26,7 @@ export default function Benefits() {
             What Will Your Child Gain?
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Beyond learning a martial art, Westbay BJJ's program at Next School
+            Beyond learning a martial art, Westbay BJJ
             creates well-rounded individuals ready to face life's challenges.
           </p>
         </motion.div>

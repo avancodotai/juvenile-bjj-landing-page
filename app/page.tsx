@@ -1,4 +1,5 @@
 import Hero from "./components/Hero";
+import Locations from "./components/Locations";
 import WhatIsBJJ from "./components/WhatIsBJJ";
 import Benefits from "./components/Benefits";
 import PedagogyAndCurriculum from "./components/PedagogyAndCurriculum";
@@ -18,6 +19,7 @@ export default function Home() {
       <SafetyAndInstructors />
       <MeetTheCoaches />
       <Competitions />
+      <Locations />
       <FAQ />
       <Footer />
     </div>
